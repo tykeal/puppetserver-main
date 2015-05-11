@@ -1,0 +1,16 @@
+---
+:backends:
+  - eyaml
+  - yaml
+
+:hierarchy:
+  - "%{::domain}/%{::hostname}"
+  - "%{::domain}/common"
+  - common
+
+:yaml:
+  :datadir: "/etc/puppetlabs/puppet/hiera/%{::environment}"
+
+:eyaml:
+  :datadir: "/etc/puppetlabs/puppet/hiera/%{::environment}"
+  :gpg_gnupghome: '/etc/puppetlabs/puppet/gnupg'
