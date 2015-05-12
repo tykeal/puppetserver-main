@@ -17,7 +17,7 @@ mod 'mjhas/postfix', '1.0.0'
 mod 'mthibaut/users', '1.0.11'
 mod 'puppetlabs/apache', '1.2.0'
 mod 'puppetlabs/concat', :latest
-mod 'puppetlabs/firewall', '1.2.0'
+mod 'puppetlabs/firewall', '1.5.0'
 mod 'puppetlabs/git', '0.3.0'
 mod 'puppetlabs/inifile', :latest
 mod 'puppetlabs/java', '1.2.0'
@@ -50,7 +50,7 @@ mod 'gerrit',
 mod 'tykeal/sslmgmt', '0.1.0'
 #mod 'sslmgmt',
 #  :git => 'https://github.com/tykeal/puppet-sslmgmt.git'
-mod 'zack/r10k', :latest
+mod 'zack/r10k', '2.7.4'
 
 
 # custom modules
