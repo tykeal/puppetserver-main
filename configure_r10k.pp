@@ -6,12 +6,12 @@ class { 'r10k':
   version     => present,
   sources     => {
     'puppet'    => {
-      'remote'  => 'git-lf-infra@git.linuxfoundation.org:resources/new-puppet/master.git',
+      'remote'  => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/master.git',
       'basedir' => "${::settings::confdir}/environments",
       'prefix'  => false,
     },
     'hiera'     => {
-      'remote'  => 'git-lf-infra@git.linuxfoundation.org:resources/new-puppet/hiera.git',
+      'remote'  => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/hiera.git',
       'basedir' => "${::settings::confdir}/hiera",
       'prefix'  => false,
     }
