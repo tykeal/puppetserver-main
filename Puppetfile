@@ -56,13 +56,13 @@ mod 'zack/r10k', :latest
 # custom modules
 
 mod 'profile',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/profile.git'
+  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
 
 mod 'role',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/role.git'
+  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
 
 # firewall bits
 mod 'local_fw',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/local_fw.git'
+  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
 
 # vim: sw=2 sts=2 ts=2 et :
