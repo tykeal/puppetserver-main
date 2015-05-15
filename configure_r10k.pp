@@ -7,12 +7,12 @@ class { 'r10k':
   sources     => {
     'puppet'    => {
       'remote'  => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/master.git',
-      'basedir' => "${::settings::confdir}/environments",
+      'basedir' => "${::settings::codedir}/environments",
       'prefix'  => false,
     },
     'hiera'     => {
       'remote'  => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/hiera.git',
-      'basedir' => "${::settings::confdir}/hiera",
+      'basedir' => "${::settings::codedir}/hieradata",
       'prefix'  => false,
     }
   },

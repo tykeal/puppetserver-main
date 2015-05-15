@@ -9,8 +9,8 @@
   - common
 
 :yaml:
-  :datadir: "/etc/puppetlabs/puppet/hiera/%{::environment}"
+  :datadir: "/etc/puppetlabs/code/hieradata/%{::environment}"
 
 :eyaml:
-  :datadir: "/etc/puppetlabs/puppet/hiera/%{::environment}"
-  :gpg_gnupghome: '/etc/puppetlabs/puppet/gnupg'
+  :datadir: "/etc/puppetlabs/code/hieradata/%{::environment}"
+  :gpg_gnupghome: '/etc/puppetlabs/gnupg'
