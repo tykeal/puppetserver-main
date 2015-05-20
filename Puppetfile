@@ -39,8 +39,8 @@ mod 'saz/sudo', '3.0.9'
 #mod 'srf/rkhunter', '0.1.4'
 # temporary override
 mod 'rkhunter',
-  :git => 'https://github.com/tykeal/puppet-rkhunter.git',
-  :ref => '3cff6f6fefe4989888c32348e00b18b364219c40'
+  :git => 'https://github.com/mmz-srf/puppet-rkhunter.git',
+  :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
 
 mod 'thias/sysctl', '1.0.0'
 # not released to puppetforge yet
