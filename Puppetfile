@@ -55,14 +55,16 @@ mod 'zack/r10k', '2.7.4'
 
 # custom modules
 
+# expect that /root/.ssh/config will have been setup to specify the
+# correct User for gerrit.linuxfoundation.org
 mod 'profile',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
+  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
 
 mod 'role',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
+  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
 
 # firewall bits
 mod 'local_fw',
-  :git => 'ssh://pdx-wl-puppet_rsa@gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
+  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
 
 # vim: sw=2 sts=2 ts=2 et :
