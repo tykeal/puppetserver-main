@@ -21,12 +21,12 @@ mod 'puppetlabs/firewall', '1.5.0'
 mod 'puppetlabs/git', '0.3.0'
 mod 'puppetlabs/inifile', :latest
 mod 'puppetlabs/java', '1.2.0'
-mod 'puppetlabs/mysql', '3.0.0'
+mod 'puppetlabs/mysql', '3.3.0'
 mod 'puppetlabs/ntp', :latest
-mod 'puppetlabs/puppetdb', '4.0.0'
-mod 'puppetlabs/postgresql', '4.1.0'
+mod 'puppetlabs/puppetdb', '4.2.1'
+mod 'puppetlabs/postgresql', '4.3.0'
 mod 'puppetlabs/ruby', :latest
-mod 'puppetlabs/stdlib', '4.4.0'
+mod 'puppetlabs/stdlib', '4.6.0'
 mod 'puppetlabs/vcsrepo', :latest
 #mod 'rtyler/jenkins', '1.3.0'
 # temporary override to get the latest dev bits
