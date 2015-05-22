@@ -5,6 +5,7 @@ forge 'http://forge.puppetlabs.com'
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'datacentred/external_facts', '1.0.0'
+mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
 mod 'opsgenie',
@@ -37,6 +38,7 @@ mod 'jenkins',
 mod 'saz/resolv_conf', '3.0.3'
 mod 'saz/ssh', '2.4.0'
 mod 'saz/sudo', '3.0.9'
+mod 'saz/timezone', '3.3.0'
 #mod 'srf/rkhunter', '0.1.4'
 # temporary override
 mod 'rkhunter',
