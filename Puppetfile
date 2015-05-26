@@ -5,6 +5,11 @@ forge 'http://forge.puppetlabs.com'
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'datacentred/external_facts', '1.0.0'
+#mod 'dhoppe/screen', '1.0.3'
+# override dhoppe/screen until they support RedHat family installation
+mod 'screen',
+  :git => 'https://github.com/tykeal/puppet-screen',
+  :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
