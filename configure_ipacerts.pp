@@ -66,6 +66,11 @@ file { 'ipa_sysrestore.state':
   ensure => file,
 }
 
+service { 'certmonger':
+  ensure  => running,
+  enable  => true,
+}
+
 # get the certificate for a valid service
 
 exec { "create_${::fqdn}_cert":
@@ -79,6 +84,7 @@ exec { "create_${::fqdn}_cert":
     File['/etc/pki/puppet/certs'],
     File['/etc/pki/puppet/private'],
     File['ipa_sysrestore.state'],
+    Service['certmonger'],
   ],
 }
 
