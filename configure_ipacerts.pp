@@ -42,6 +42,7 @@ file { '/etc/pki/puppet/public_keys':
   ensure  => link,
   target  => '/etc/pki/puppet/certs',
   require => [
+  force   => true,
     File['/etc/pki/puppet'],
   ],
 }
@@ -49,6 +50,7 @@ file { '/etc/pki/puppet/public_keys':
 file { '/etc/pki/puppet/certs/ca.pem':
   ensure  => link,
   target  => '/etc/ipa/ca.crt',
+  force   => true,
   require => [
     File['/etc/pki/puppet/certs'],
     File['/etc/ipa/ca.crt'],
@@ -69,6 +71,13 @@ file { 'ipa_sysrestore.state':
 service { 'certmonger':
   ensure  => running,
   enable  => true,
+}
+
+file { '/etc/profile.d/puppet.sh':
+  content => "export PATH=\$\{PATH}:/opt/puppetlabs/bin",
+  owner   => 'root',
+  group   => 'root',
+  mode    => '0644',
 }
 
 # get the certificate for a valid service
