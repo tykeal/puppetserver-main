@@ -84,6 +84,9 @@ file { '/etc/profile.d/puppet.sh':
 # hack the ipa command to work with the proper API_VERSION
 
 file { '/usr/bin/ipa3.0':
+  owner => root,
+  group => root,
+  mode  => '0755',
   content => "
 #!/usr/bin/python
 
@@ -93,10 +96,8 @@ import sys
 from ipalib import api, cli
 if __name__ == '__main__':
     cli.run(api)
+
   ",
-  owner => root,
-  group => root,
-  mode  => 755,
 }
 
 # create the puppet service
