@@ -41,8 +41,8 @@ file { '/etc/pki/puppet/private_keys':
 file { '/etc/pki/puppet/public_keys':
   ensure  => link,
   target  => '/etc/pki/puppet/certs',
-  require => [
   force   => true,
+  require => [
     File['/etc/pki/puppet'],
   ],
 }
