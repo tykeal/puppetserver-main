@@ -1,1 +1,5 @@
 *.swp
+environments
+hieradata
+modules
+
