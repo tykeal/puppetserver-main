@@ -108,7 +108,7 @@ exec { "kinit_svcadmin":
 exec { "create_puppet_${::fqdn}_service":
   command => "/usr/bin/ipa3.0 service-add puppet/${::fqdn}",
   unless  => "/usr/bin/ipa3.0 service-show puppet/${::fqdn}",
-  require [
+  require => [
     File['/usr/bin/ipa3.0'],
     Exec['kinit_svcadmin'],
   ],
