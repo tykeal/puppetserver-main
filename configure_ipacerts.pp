@@ -74,7 +74,7 @@ service { 'certmonger':
 }
 
 file { '/etc/profile.d/puppet.sh':
-  content => "export PATH=\$\{PATH}:/opt/puppetlabs/bin",
+  content => "export PATH=\${PATH}:/opt/puppetlabs/bin",
   owner   => 'root',
   group   => 'root',
   mode    => '0644',
