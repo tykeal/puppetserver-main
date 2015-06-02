@@ -80,6 +80,40 @@ file { '/etc/profile.d/puppet.sh':
   mode    => '0644',
 }
 
+### THIS IS A TEMPORARY SOLUTION UNTIL THE IPA CLI IS FIXED ###
+# hack the ipa command to work with the proper API_VERSION
+
+file { '/usr/bin/ipa3.0':
+  content => "
+#!/usr/bin/python
+
+import ipapython.version
+ipapython.version.API_VERSION=u'2.49'
+import sys
+from ipalib import api, cli
+if __name__ == '__main__':
+    cli.run(api)
+  ",
+  owner => root,
+  group => root,
+  mode  => 755,
+}
+
+# create the puppet service
+
+exec { "kinit_svcadmin":
+  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
+}
+
+exec { "create_puppet_${::fqdn}_service":
+  command => "/usr/bin/ipa3.0 service-add puppet/${::fqdn}",
+  unless  => "/usr/bin/ipa3.0 service-show puppet/${::fqdn}",
+  require [
+    File['/usr/bin/ipa3.0'],
+    Exec['kinit_svcadmin'],
+  ],
+}
+
 # get the certificate for a valid service
 
 exec { "create_${::fqdn}_cert":
@@ -94,6 +128,7 @@ exec { "create_${::fqdn}_cert":
     File['/etc/pki/puppet/private'],
     File['ipa_sysrestore.state'],
     Service['certmonger'],
+    Exec["create_puppet_${::fqdn}_service"],
   ],
 }
 
