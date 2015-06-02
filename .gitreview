@@ -2,4 +2,4 @@
 host=gerrit.linuxfoundation.org
 port=29418
 project=puppet/master
-defaultbranch=production
+defaultbranch=jconway-baculatest
