@@ -58,7 +58,7 @@ mod 'gerrit',
 mod 'tykeal/sslmgmt', '0.1.0'
 #mod 'sslmgmt',
 #  :git => 'https://github.com/tykeal/puppet-sslmgmt.git'
-mod 'zack/r10k', '2.7.4'
+mod 'zack/r10k', '2.8.0'
 
 
 # custom modules
