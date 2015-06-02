@@ -83,12 +83,11 @@ file { '/etc/profile.d/puppet.sh':
 ### THIS IS A TEMPORARY SOLUTION UNTIL THE IPA CLI IS FIXED ###
 # hack the ipa command to work with the proper API_VERSION
 
-file { '/usr/bin/ipa3.0':
+file { '/usr/bin/ipa3':
   owner => root,
   group => root,
   mode  => '0755',
-  content => "
-#!/usr/bin/python
+  content => "#!/usr/bin/python
 
 import ipapython.version
 ipapython.version.API_VERSION=u'2.49'
@@ -97,20 +96,21 @@ from ipalib import api, cli
 if __name__ == '__main__':
     cli.run(api)
 
-  ",
+",
 }
 
 # create the puppet service
 
 exec { "kinit_svcadmin":
-  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
+  command     => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
+  refreshonly => true,
 }
 
 exec { "create_puppet_${::fqdn}_service":
-  command => "/usr/bin/ipa3.0 service-add puppet/${::fqdn}",
-  unless  => "/usr/bin/ipa3.0 service-show puppet/${::fqdn}",
+  command => "/usr/bin/ipa3 service-add puppet/${::fqdn}",
+  unless  => "/usr/bin/ipa3 service-show puppet/${::fqdn}",
   require => [
-    File['/usr/bin/ipa3.0'],
+    File['/usr/bin/ipa3'],
     Exec['kinit_svcadmin'],
   ],
 }
