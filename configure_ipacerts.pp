@@ -102,8 +102,8 @@ if __name__ == '__main__':
 # create the puppet service
 
 exec { "kinit_svcadmin":
-  command     => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
-  refreshonly => true,
+  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
+  unless  => "/usr/bin/klist",
 }
 
 exec { "create_puppet_${::fqdn}_service":
@@ -133,4 +133,4 @@ exec { "create_${::fqdn}_cert":
   ],
 }
 
-# vim: sw=2 sts=2 ts=2 et :
+/* vim: set ts=2 sw=2 tw=0 et :*/
