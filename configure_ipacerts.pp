@@ -133,4 +133,18 @@ exec { "create_${::fqdn}_cert":
   ],
 }
 
+# make a simple puppet.conf - one time setup
+
+file { '/etc/puppetlabs/puppet/puppet.conf':
+  owner   => root,
+  group   => root,
+  mode    => '0644',
+  content => "[agent]
+server = pdx-wl-puppet.int.codeaurora.org
+ssldir = /etc/pki/puppet
+cacert = /etc/ipa/ca.crt
+
+",
+}
+
 /* vim: set ts=2 sw=2 tw=0 et :*/
