@@ -61,8 +61,7 @@ mod 'tykeal/sslmgmt', '0.1.0'
 mod 'zack/r10k', '2.8.0'
 
 mod 'bacula',
-  :git => 'https://github.com/jordanconway/puppet-bacula.git',
-  :ref => 'ddf10f8a024cc9b73ccf96d357c91f795d5f50fb'
+  :git => 'https://github.com/jordanconway/puppet-bacula.git'
 
 # custom modules
 
