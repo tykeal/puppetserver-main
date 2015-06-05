@@ -60,7 +60,14 @@ mod 'tykeal/sslmgmt', '0.1.0'
 #  :git => 'https://github.com/tykeal/puppet-sslmgmt.git'
 mod 'zack/r10k', '2.8.0'
 
-mod 'ghoneycutt/pam', '2.19.0'
+mod 'pam',
+  :git => 'https://github.com/herlo/puppet-module-pam.git'
+
+mod 'ghoneycutt/common', :latest
+
+mod 'nsswitch',
+  :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
+
 
 # custom modules
 
