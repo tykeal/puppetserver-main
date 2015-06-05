@@ -60,6 +60,7 @@ mod 'tykeal/sslmgmt', '0.1.0'
 #  :git => 'https://github.com/tykeal/puppet-sslmgmt.git'
 mod 'zack/r10k', '2.8.0'
 
+mod 'ghoneycutt/pam', '2.19.0'
 
 # custom modules
 
