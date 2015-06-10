@@ -51,17 +51,20 @@ mod 'rkhunter',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
 
 mod 'thias/sysctl', '1.0.0'
-# not released to puppetforge yet
-# mod 'tykeal/gerrit'
-mod 'gerrit',
-  :git => 'https://github.com/tykeal/puppet-gerrit.git'
-mod 'tykeal/sslmgmt', '0.1.0'
-#mod 'sslmgmt',
-#  :git => 'https://github.com/tykeal/puppet-sslmgmt.git'
+mod 'tykeal/gerrit', '0.9.0'
+mod 'tykeal/sslmgmt', '1.0.0'
 mod 'zack/r10k', '2.8.0'
 
 mod 'bacula',
   :git => 'https://github.com/jordanconway/puppet-bacula.git'
+
+mod 'pam',
+  :git => 'https://github.com/herlo/puppet-module-pam.git'
+
+mod 'ghoneycutt/common', :latest
+
+mod 'nsswitch',
+  :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
 
 # custom modules
 
