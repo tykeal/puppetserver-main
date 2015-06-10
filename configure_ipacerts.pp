@@ -102,7 +102,7 @@ if __name__ == '__main__':
 # create the puppet service
 
 exec { "kinit_svcadmin":
-  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin@CODEAURORA.ORG",
+  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin",
   unless  => "/usr/bin/klist",
 }
 
