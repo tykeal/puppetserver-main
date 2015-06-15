@@ -4,6 +4,7 @@ forge 'http://forge.puppetlabs.com'
 
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/puppetserver', '0.9.0'
+mod 'camptocamp/selinux', '0.1.19'
 mod 'datacentred/external_facts', '1.0.0'
 #mod 'dhoppe/screen', '1.0.3'
 # override dhoppe/screen until they support RedHat family installation
