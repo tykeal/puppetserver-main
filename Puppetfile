@@ -50,6 +50,7 @@ mod 'saz/timezone', '3.3.0'
 mod 'rkhunter',
   :git => 'https://github.com/mmz-srf/puppet-rkhunter.git',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
+mod 'stankevich/python', '1.9.4'
 
 mod 'thias/sysctl', '1.0.0'
 mod 'tykeal/gerrit', '0.9.0'
