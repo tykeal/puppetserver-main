@@ -1,15 +1,11 @@
 ---
 :backends:
   - eyaml
-  - yaml
 
 :hierarchy:
   - "%{::domain}/%{::hostname}"
   - "%{::domain}/common"
   - common
-
-:yaml:
-  :datadir: "/etc/puppetlabs/code/hieradata/%{::environment}"
 
 :eyaml:
   :datadir: "/etc/puppetlabs/code/hieradata/%{::environment}"
