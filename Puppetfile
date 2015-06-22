@@ -11,6 +11,7 @@ mod 'datacentred/external_facts', '1.0.0'
 mod 'screen',
   :git => 'https://github.com/tykeal/puppet-screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
+mod 'engage/uwsgi', '1.2.0'
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
@@ -47,6 +48,7 @@ mod 'saz/sudo', '3.0.9'
 mod 'saz/timezone', '3.3.0'
 #mod 'srf/rkhunter', '0.1.4'
 # temporary override
+mod 'stahnma/epel', '1.0.2'
 mod 'rkhunter',
   :git => 'https://github.com/mmz-srf/puppet-rkhunter.git',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
@@ -79,5 +81,9 @@ mod 'role',
 # firewall bits
 mod 'local_fw',
   :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
+
+mod 'mailman3',
+  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/mailman3.git',
+  :ref => '246e6bd6a25e6430a27db89b3e29e67ebd9b002a'
 
 # vim: sw=2 sts=2 ts=2 et :
