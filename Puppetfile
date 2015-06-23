@@ -16,6 +16,8 @@ mod 'ghoneycutt/common', :latest
 mod 'nfs',
   :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git',
   :branch => 'el7'
+mod 'ghoneycutt/rpcbind', :latest
+mod 'ghoneycutt/types', :latest
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
