@@ -10,6 +10,12 @@ mod 'datacentred/external_facts', '1.0.0'
 mod 'screen',
   :git => 'https://github.com/tykeal/puppet-screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
+mod 'ghoneycutt/common', :latest
+#mod 'ghoneycutt/nfs', :latest
+# override forge module as it is broken for EL7
+mod 'nfs',
+  :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git'
+  :branch => 'el7'
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
@@ -60,8 +66,6 @@ mod 'bacula',
 
 mod 'pam',
   :git => 'https://github.com/herlo/puppet-module-pam.git'
-
-mod 'ghoneycutt/common', :latest
 
 mod 'nsswitch',
   :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
