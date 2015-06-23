@@ -14,7 +14,7 @@ mod 'ghoneycutt/common', :latest
 #mod 'ghoneycutt/nfs', :latest
 # override forge module as it is broken for EL7
 mod 'nfs',
-  :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git'
+  :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git',
   :branch => 'el7'
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
