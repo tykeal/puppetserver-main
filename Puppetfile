@@ -84,6 +84,6 @@ mod 'local_fw',
 
 mod 'mailman3',
   :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/mailman3.git',
-  :ref => '246e6bd6a25e6430a27db89b3e29e67ebd9b002a'
+  :ref => '104f4fa4bc7988b4da58ea9b757b944d82884d12'
 
 # vim: sw=2 sts=2 ts=2 et :
