@@ -3,6 +3,7 @@ forge 'http://forge.puppetlabs.com'
 # Modules from the Puppet Forge
 
 mod 'camptocamp/augeas', '1.2.1'
+mod 'camptocamp/postfix', '1.2.10'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'camptocamp/selinux', '0.1.19'
 mod 'datacentred/external_facts', '1.0.0'
@@ -21,7 +22,6 @@ mod 'opsgenie',
 
 mod 'jfryman/nginx', '0.2.1'
 mod 'maestrodev/wget', '1.5.7'
-mod 'mjhas/postfix', '1.0.0'
 mod 'mthibaut/users', '1.0.11'
 mod 'puppetlabs/apache', '1.5.0'
 mod 'puppetlabs/concat', '1.2.3'
