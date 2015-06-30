@@ -13,6 +13,14 @@ mod 'screen',
   :git => 'https://github.com/tykeal/puppet-screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
 mod 'engage/uwsgi', '1.2.0'
+mod 'ghoneycutt/common', :latest
+#mod 'ghoneycutt/nfs', :latest
+# override forge module as it is broken for EL7
+mod 'nfs',
+  :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git',
+  :branch => 'el7'
+mod 'ghoneycutt/rpcbind', :latest
+mod 'ghoneycutt/types', :latest
 mod 'ghoneycutt/vim', '2.10.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
@@ -59,14 +67,14 @@ mod 'tykeal/gerrit', '0.9.0'
 mod 'tykeal/sslmgmt', '1.0.0'
 mod 'zack/r10k', '2.8.0'
 
+mod 'bacula',
+  :git => 'https://github.com/jordanconway/puppet-bacula.git'
+
 mod 'pam',
   :git => 'https://github.com/herlo/puppet-module-pam.git'
 
-mod 'ghoneycutt/common', :latest
-
 mod 'nsswitch',
   :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
-
 
 # custom modules
 
