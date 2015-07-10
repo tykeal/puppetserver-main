@@ -143,6 +143,8 @@ file { '/etc/puppetlabs/puppet/puppet.conf':
 server = pdx-wl-puppet.int.codeaurora.org
 ssldir = /etc/pki/puppet
 cacert = /etc/ipa/ca.crt
+path = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/opt/puppetlabs/bin:/opt/puppetlabs/p
+uppet/bin
 
 ",
 }
