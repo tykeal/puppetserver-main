@@ -99,12 +99,12 @@ if __name__ == '__main__':
 ",
 }
 
-# create the puppet service
-
-exec { "kinit_svcadmin":
-  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin",
-  unless  => "/usr/bin/klist",
-}
+## create the puppet service
+#
+#exec { "kinit_svcadmin":
+#  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin",
+#  unless  => "/usr/bin/klist",
+#}
 
 exec { "create_puppet_${::fqdn}_service":
   command => "/usr/bin/ipa3 service-add puppet/${::fqdn}",
@@ -120,6 +120,7 @@ exec { "create_puppet_${::fqdn}_service":
 exec { "create_${::fqdn}_cert":
   command => "ipa-getcert request -K puppet/${::fqdn} -f /etc/pki/puppet/certs/${::fqdn}.pem -k /etc/pki/puppet/private/${::fqdn}.pem",
   path    => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/puppet/bin:/root/bin",
+  onlyif  => "/usr/bin/klist",
   creates => [
     "/etc/pki/puppet/certs/${::fqdn}.pem",
     "/etc/pki/puppet/private/${::fqdn}.pem",
