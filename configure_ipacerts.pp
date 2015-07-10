@@ -99,7 +99,7 @@ if __name__ == '__main__':
 ",
 }
 
-## create the puppet service
+# create the puppet service
 #
 #exec { "kinit_svcadmin":
 #  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin",
@@ -111,7 +111,6 @@ exec { "create_puppet_${::fqdn}_service":
   unless  => "/usr/bin/ipa3 service-show puppet/${::fqdn}",
   require => [
     File['/usr/bin/ipa3'],
-    Exec['kinit_svcadmin'],
   ],
 }
 
