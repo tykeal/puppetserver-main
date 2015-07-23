@@ -21,20 +21,21 @@ class { 'r10k':
   },
   manage_modulepath => false,
 
-  file { '/etc/profile.d/r10k.sh'
-  content => "export PATH=\${PATH}:/usr/local/bin",
-  owner   => 'root',
-  group   => 'root',
-  mode    => '0644',
-  }
+# These stanzas broke this manifest for me, but you might still want the content
+#  file { '/etc/profile.d/r10k.sh':
+#    content => "export PATH=\${PATH}:/usr/local/bin",
+#    owner   => 'root',
+#    group   => 'root',
+#    mode    => '0644',
+#  }
 
-  exec { 'source_r10k_path'
-    command     => "source /etc/profile.d/r10k.sh",
-    refreshonly => true,
-    require     => [
-      File['/etc/profile/r10k.sh'],
-    ],
-  }
+#  exec { 'source_r10k_path':
+#    command     => "source /etc/profile.d/r10k.sh",
+#    refreshonly => true,
+#    require     => [
+#      File['/etc/profile/r10k.sh'],
+#    ],
+#  }
 }
 
 /* vim: set ts=2 sw=2 tw=0 et :*/
