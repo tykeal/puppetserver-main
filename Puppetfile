@@ -77,6 +77,10 @@ mod 'pam',
 mod 'nsswitch',
   :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
 
+mod 'totpcgi',
+  :git => 'https://github.com/herlo/puppet-totpcgi.git'
+
+
 # custom modules
 
 # expect that /root/.ssh/config will have been setup to specify the
