@@ -41,8 +41,8 @@ mod 'puppetlabs/inifile', :latest
 mod 'puppetlabs/java', '1.3.0'
 mod 'puppetlabs/mysql', '3.4.0'
 mod 'puppetlabs/ntp', :latest
-mod 'puppetlabs/puppetdb', '4.3.0'
-mod 'puppetlabs/postgresql', '4.3.0'
+mod 'puppetlabs/puppetdb', '5.0.0'
+mod 'puppetlabs/postgresql', '4.4.2'
 mod 'puppetlabs/ruby', :latest
 mod 'puppetlabs/stdlib', '4.6.0'
 mod 'puppetlabs/vcsrepo', :latest
