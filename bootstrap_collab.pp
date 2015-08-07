@@ -6,15 +6,15 @@
 
 file { '/etc/pki/puppet':
   ensure  => directory,
-  owner   => 'puppet',
-  group   => 'puppet',
+  owner   => 'root',
+  group   => 'root',
   mode    => '0771',
 }
 
 file { '/etc/pki/puppet/certs':
   ensure  => directory,
-  owner   => 'puppet',
-  group   => 'puppet',
+  owner   => 'root',
+  group   => 'root',
   mode    => '0755',
   require => [
     File['/etc/pki/puppet'],
@@ -23,8 +23,8 @@ file { '/etc/pki/puppet/certs':
 
 file { '/etc/pki/puppet/private':
   ensure  => directory,
-  owner   => 'puppet',
-  group   => 'puppet',
+  owner   => 'root',
+  group   => 'root',
   mode    => '0750',
   require => [
     File['/etc/pki/puppet'],
@@ -61,7 +61,9 @@ file { '/etc/pki/puppet/certs/ca.pem':
 # has machine been enrolled in IPA?
 
 file { '/etc/ipa/ca.crt':
-  ensure  => file,
+  ensure => file,
+  owner  => 'root',
+  group  => 'root',
 }
 
 file { 'ipa_sysrestore.state':
@@ -75,7 +77,7 @@ service { 'certmonger':
 }
 
 file { '/etc/profile.d/puppet.sh':
-  content => "export PATH=\${PATH}:/opt/puppetlabs/bin",
+  content => "export PATH=\${PATH}:/opt/puppetlabs/bin:/usr/local/bin",
   owner   => 'root',
   group   => 'root',
   mode    => '0644',
@@ -99,13 +101,6 @@ if __name__ == '__main__':
 
 ",
 }
-
-# create the puppet service
-#
-#exec { "kinit_svcadmin":
-#  command => "/usr/bin/kinit -k -t /etc/ipa/svcadmin.keytab svcadmin",
-#  unless  => "/usr/bin/klist",
-#}
 
 exec { "create_puppet_${::fqdn}_service":
   command => "/usr/bin/ipa3 service-add puppet/${::fqdn}",
