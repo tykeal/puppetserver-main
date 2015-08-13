@@ -6,7 +6,10 @@ mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/postfix', '1.2.10'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'camptocamp/selinux', '0.1.19'
-mod 'datacentred/external_facts', '1.0.0'
+#mod 'datacentred/external_facts', '1.0.0'
+mod 'external_facts',
+  :git => 'https://github.com/tykeal/datacentred-external_facts.git',
+  :ref => 'enable_puppet4'
 #mod 'dhoppe/screen', '1.0.3'
 # override dhoppe/screen until they support RedHat family installation
 mod 'screen',
