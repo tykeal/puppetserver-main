@@ -56,6 +56,7 @@ mod 'jenkins',
   :ref => '21dd8b5a0aa9b65531f0b1955b3d51c77ceb1a7f'
 mod 'saz/dnsmasq', '1.2.0'
 mod 'saz/resolv_conf', '3.0.3'
+mod 'saz/rsyslog', '3.5.1'
 mod 'saz/ssh', '2.4.0'
 mod 'saz/sudo', '3.0.9'
 mod 'saz/timezone', '3.3.0'
