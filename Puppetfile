@@ -6,6 +6,7 @@ mod 'auditd',
   :git => 'https://github.com/kemra102/puppet-auditd.git',
   :ref => 'e0d5f4fd47f4be65d929ebb7a4297164a9258bdc'
 mod 'camptocamp/augeas', '1.2.1'
+mod 'camptocamp/dell', '0.3.1'
 mod 'camptocamp/postfix', '1.2.10'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'camptocamp/selinux', '0.1.19'
