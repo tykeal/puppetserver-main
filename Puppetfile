@@ -35,7 +35,7 @@ mod 'opsgenie',
   :git => 'https://github.com/jamtur01/puppet-opsgenie',
   :ref => 'b557acea9a1dc363fdb27f60c2a747b64699645d'
 
-mod 'jfryman/nginx', '0.2.1'
+mod 'jfryman/nginx', '0.2.7'
 mod 'maestrodev/wget', '1.5.7'
 mod 'mthibaut/users', '1.0.11'
 mod 'pdxcat/nrpe', '2.0.0'
