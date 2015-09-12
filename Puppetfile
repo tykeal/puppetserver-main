@@ -53,11 +53,7 @@ mod 'puppetlabs/postgresql', '4.4.2'
 mod 'puppetlabs/ruby', :latest
 mod 'puppetlabs/stdlib', '4.6.0'
 mod 'puppetlabs/vcsrepo', :latest
-#mod 'rtyler/jenkins', '1.3.0'
-# temporary override to get the latest dev bits
-mod 'jenkins',
-  :git => 'https://github.com/jenkinsci/puppet-jenkins.git',
-  :ref => '21dd8b5a0aa9b65531f0b1955b3d51c77ceb1a7f'
+mod 'rtyler/jenkins', '1.5.0'
 mod 'saz/dnsmasq', '1.2.0'
 mod 'saz/resolv_conf', '3.0.3'
 mod 'saz/rsyslog', '3.5.1'
