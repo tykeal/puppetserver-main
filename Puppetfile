@@ -2,9 +2,6 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 
-mod 'auditd',
-  :git => 'https://github.com/kemra102/puppet-auditd.git',
-  :ref => 'e0d5f4fd47f4be65d929ebb7a4297164a9258bdc'
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/dell', '0.3.1'
 mod 'camptocamp/postfix', '1.2.10'
@@ -29,6 +26,7 @@ mod 'nfs',
 mod 'ghoneycutt/rpcbind', :latest
 mod 'ghoneycutt/types', :latest
 mod 'ghoneycutt/vim', '2.10.0'
+mod 'kemra102/auditd', '2.0.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
 # override forge module as it refuses to install
 mod 'opsgenie',
