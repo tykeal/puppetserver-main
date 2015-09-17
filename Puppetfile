@@ -17,6 +17,7 @@ mod 'screen',
   :git => 'https://github.com/tykeal/puppet-screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
 mod 'engage/uwsgi', '1.2.0'
+mod 'garethr/erlang', '0.3.0'
 mod 'ghoneycutt/common', :latest
 #mod 'ghoneycutt/nfs', :latest
 # override forge module as it is broken for EL7
@@ -39,6 +40,7 @@ mod 'mthibaut/users', '1.0.11'
 mod 'nanliu/staging', '1.0.3'
 mod 'pdxcat/nrpe', '2.0.0'
 mod 'puppet/jira', '1.3.0'
+mod 'puppet/mcollective', '2.1.1'
 mod 'puppetlabs/apache', '1.5.0'
 mod 'puppetlabs/concat', '1.2.3'
 mod 'puppetlabs/firewall', '1.6.0'
@@ -50,9 +52,11 @@ mod 'puppetlabs/mysql', '3.4.0'
 mod 'puppetlabs/ntp', :latest
 mod 'puppetlabs/puppetdb', '5.0.0'
 mod 'puppetlabs/postgresql', '4.4.2'
+mod 'puppetlabs/rabbitmq', '5.2.3'
 mod 'puppetlabs/ruby', :latest
 mod 'puppetlabs/stdlib', '4.6.0'
 mod 'puppetlabs/vcsrepo', :latest
+mod 'richardc/datacat', '0.6.2'
 mod 'rtyler/jenkins', '1.5.0'
 mod 'saz/dnsmasq', '1.2.0'
 mod 'saz/resolv_conf', '3.0.3'
