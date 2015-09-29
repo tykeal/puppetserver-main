@@ -18,14 +18,14 @@ mod 'screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
 mod 'engage/uwsgi', '1.2.0'
 mod 'garethr/erlang', '0.3.0'
-mod 'ghoneycutt/common', :latest
+mod 'ghoneycutt/common', '1.3.0'
 #mod 'ghoneycutt/nfs', :latest
 # override forge module as it is broken for EL7
 mod 'nfs',
   :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git',
   :branch => 'el7'
-mod 'ghoneycutt/rpcbind', :latest
-mod 'ghoneycutt/types', :latest
+mod 'ghoneycutt/rpcbind', '1.4.0'
+mod 'ghoneycutt/types', '1.9.0'
 mod 'ghoneycutt/vim', '2.10.0'
 mod 'kemra102/auditd', '2.0.0'
 #mod 'jamtur01/opsgenie', '0.0.1'
@@ -46,16 +46,16 @@ mod 'puppetlabs/concat', '1.2.3'
 mod 'puppetlabs/firewall', '1.6.0'
 mod 'puppetlabs/gcc', '0.3.0'
 mod 'puppetlabs/git', '0.4.0'
-mod 'puppetlabs/inifile', :latest
+mod 'puppetlabs/inifile', '1.4.2'
 mod 'puppetlabs/java', '1.3.0'
 mod 'puppetlabs/mysql', '3.4.0'
-mod 'puppetlabs/ntp', :latest
+mod 'puppetlabs/ntp', '4.1.0'
 mod 'puppetlabs/puppetdb', '5.0.0'
 mod 'puppetlabs/postgresql', '4.4.2'
 mod 'puppetlabs/rabbitmq', '5.2.3'
-mod 'puppetlabs/ruby', :latest
+mod 'puppetlabs/ruby', '0.4.0'
 mod 'puppetlabs/stdlib', '4.6.0'
-mod 'puppetlabs/vcsrepo', :latest
+mod 'puppetlabs/vcsrepo', '1.3.1'
 mod 'richardc/datacat', '0.6.2'
 mod 'rtyler/jenkins', '1.5.0'
 mod 'saz/dnsmasq', '1.2.0'
