@@ -6,15 +6,15 @@
 # properly for gerrit checkouts
 
 class { 'r10k':
-  version     => present,
-  sources     => {
+  version       => present,
+  sources       => {
     'puppet'    => {
-      'remote'  => 'ssh://gerrit.linuxfoundation.org:29418/puppet/master.git',
+      'remote'  => 'https://github.com/tykeal/puppetserver-main.git',
       'basedir' => "${::settings::codedir}/environments",
       'prefix'  => false,
     },
     'hiera'     => {
-      'remote'  => 'ssh://gerrit.linuxfoundation.org:29418/puppet/hiera.git',
+      'remote'  => 'https://github.com/tykeal/puppetserver-hiera.git',
       'basedir' => "${::settings::codedir}/hieradata",
       'prefix'  => false,
     }

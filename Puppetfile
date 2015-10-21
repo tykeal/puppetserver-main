@@ -7,6 +7,7 @@ mod 'camptocamp/dell', '0.3.1'
 mod 'camptocamp/postfix', '1.2.10'
 mod 'camptocamp/puppetserver', '0.9.0'
 mod 'camptocamp/selinux', '0.1.19'
+mod 'croddy/make', '0.0.5'
 #mod 'datacentred/external_facts', '1.0.0'
 mod 'external_facts',
   :git => 'https://github.com/tykeal/datacentred-external_facts.git',
@@ -18,6 +19,7 @@ mod 'screen',
   :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
 mod 'engage/uwsgi', '1.2.0'
 mod 'garethr/erlang', '0.3.0'
+mod 'gentoo/portage', '2.3.0'
 mod 'ghoneycutt/common', '1.3.0'
 #mod 'ghoneycutt/nfs', :latest
 # override forge module as it is broken for EL7
@@ -42,7 +44,7 @@ mod 'pdxcat/nrpe', '2.0.0'
 mod 'puppet/jira', '1.3.0'
 mod 'puppet/mcollective', '2.1.1'
 mod 'puppetlabs/apache', '1.5.0'
-mod 'puppetlabs/concat', '1.2.3'
+mod 'puppetlabs/concat', '1.2.4'
 mod 'puppetlabs/firewall', '1.7.1'
 mod 'puppetlabs/gcc', '0.3.0'
 mod 'puppetlabs/git', '0.4.0'
@@ -50,11 +52,12 @@ mod 'puppetlabs/inifile', '1.4.2'
 mod 'puppetlabs/java', '1.3.0'
 mod 'puppetlabs/mysql', '3.4.0'
 mod 'puppetlabs/ntp', '4.1.0'
+mod 'puppetlabs/pe_gem', '0.1.1'
 mod 'puppetlabs/puppetdb', '5.0.0'
 mod 'puppetlabs/postgresql', '4.4.2'
 mod 'puppetlabs/rabbitmq', '5.2.3'
 mod 'puppetlabs/ruby', '0.4.0'
-mod 'puppetlabs/stdlib', '4.6.0'
+mod 'puppetlabs/stdlib', '4.9.0'
 mod 'puppetlabs/vcsrepo', '1.3.1'
 mod 'richardc/datacat', '0.6.2'
 mod 'rtyler/jenkins', '1.5.0'
@@ -80,7 +83,7 @@ mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
   :ref => '16394998947f210caa025a7913314b8840e31236'
 mod 'tykeal/sslmgmt', '1.0.0'
-mod 'zack/r10k', '2.8.0'
+mod 'zack/r10k', '3.1.1'
 
 mod 'bacula',
   :git => 'https://github.com/jordanconway/puppet-bacula.git',
@@ -100,18 +103,18 @@ mod 'totpcgi',
 
 # expect that /root/.ssh/config will have been setup to specify the
 # correct User for gerrit.linuxfoundation.org
-mod 'profile',
-  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
-
-mod 'role',
-  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
-
-# firewall bits
-mod 'local_fw',
-  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
-
-mod 'mailman3',
-  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/mailman3.git',
-  :ref => '104f4fa4bc7988b4da58ea9b757b944d82884d12'
+#mod 'profile',
+#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
+#
+#mod 'role',
+#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
+#
+## firewall bits
+#mod 'local_fw',
+#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
+#
+#mod 'mailman3',
+#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/mailman3.git',
+#  :ref => '104f4fa4bc7988b4da58ea9b757b944d82884d12'
 
 # vim: sw=2 sts=2 ts=2 et :
