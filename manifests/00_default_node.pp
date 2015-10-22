@@ -9,7 +9,7 @@ node default {
 
   if ($role == 'default') {
     # include our baseline role for default systems
-    include role
+    include role::default
   }
   else {
     # Assign our hiera defined role

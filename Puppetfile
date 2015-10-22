@@ -85,10 +85,6 @@ mod 'nagios',
 mod 'tykeal/sslmgmt', '1.0.0'
 mod 'zack/r10k', '3.1.1'
 
-mod 'bacula',
-  :git => 'https://github.com/jordanconway/puppet-bacula.git',
-  :ref => '7138eccf341136dfb00ba68c905e77c6f22f4018'
-
 mod 'pam',
   :git => 'https://github.com/herlo/puppet-module-pam.git'
 
@@ -101,20 +97,16 @@ mod 'totpcgi',
 
 # custom modules
 
-# expect that /root/.ssh/config will have been setup to specify the
 # correct User for gerrit.linuxfoundation.org
-#mod 'profile',
-#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/profile.git'
-#
-#mod 'role',
-#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/role.git'
-#
-## firewall bits
-#mod 'local_fw',
-#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/local_fw.git'
-#
-#mod 'mailman3',
-#  :git => 'ssh://gerrit.linuxfoundation.org:29418/puppet/modules/mailman3.git',
-#  :ref => '104f4fa4bc7988b4da58ea9b757b944d82884d12'
+mod 'profile',
+  :git => 'https://github.com/tykeal/puppetserver-mod-profile.git'
+
+mod 'role',
+  :git => 'https://github.com/tykeal/puppetserver-mod-role.git'
+
+# use the local_fw from LF
+# firewall bits
+mod 'local_fw',
+  :git => 'https://gerrit.linuxfoundation.org/infra/p/puppet/modules/local_fw.git'
 
 # vim: sw=2 sts=2 ts=2 et :
