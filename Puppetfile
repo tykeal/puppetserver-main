@@ -2,6 +2,7 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 
+mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/dell', '0.3.1'
 mod 'camptocamp/postfix', '1.2.10'
