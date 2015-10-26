@@ -78,7 +78,7 @@ mod 'tykeal/gerrit', '0.9.0'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
-  :ref => '16394998947f210caa025a7913314b8840e31236'
+  :ref => '51f17af90fdee229f7361bff40eaea49cb341063'
 mod 'tykeal/sslmgmt', '1.0.0'
 mod 'zack/r10k', '2.8.0'
 
