@@ -75,7 +75,7 @@ mod 'stankevich/python', '1.9.4'
 
 mod 'thias/sysctl', '1.0.0'
 mod 'tykeal/clm', '0.1.2'
-mod 'tykeal/gerrit', '0.9.1'
+mod 'tykeal/gerrit', '0.9.2'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
