@@ -58,6 +58,7 @@ mod 'puppetlabs/postgresql', '4.4.2'
 mod 'puppetlabs/rabbitmq', '5.2.3'
 mod 'puppetlabs/ruby', '0.4.0'
 mod 'puppetlabs/stdlib', '4.9.0'
+mod 'puppetlabs/tagmail', '2.1.0'
 mod 'puppetlabs/vcsrepo', '1.3.1'
 mod 'richardc/datacat', '0.6.2'
 mod 'rtyler/jenkins', '1.5.0'
@@ -76,12 +77,12 @@ mod 'rkhunter',
 mod 'stankevich/python', '1.9.4'
 
 mod 'thias/sysctl', '1.0.0'
-mod 'tykeal/clm', '0.1.1'
-mod 'tykeal/gerrit', '0.9.0'
+mod 'tykeal/clm', '0.1.2'
+mod 'tykeal/gerrit', '0.9.2'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
-  :ref => '16394998947f210caa025a7913314b8840e31236'
+  :ref => '51f17af90fdee229f7361bff40eaea49cb341063'
 mod 'tykeal/sslmgmt', '1.0.0'
 mod 'zack/r10k', '3.1.1'
 
