@@ -5,6 +5,11 @@
 # Expect that /root/.ssh/config will have been setup to handle the User
 # properly for gerrit checkouts
 
+file { '/etc/puppetlabs/r10k':
+  ensure => directory,
+  before => Class['r10k'],
+}
+
 class { 'r10k':
   version       => present,
   sources       => {
