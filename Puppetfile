@@ -30,12 +30,6 @@ mod 'ghoneycutt/rpcbind', '1.4.0'
 mod 'ghoneycutt/types', '1.9.0'
 mod 'ghoneycutt/vim', '2.10.0'
 mod 'kemra102/auditd', '2.0.0'
-#mod 'jamtur01/opsgenie', '0.0.1'
-# override forge module as it refuses to install
-mod 'opsgenie',
-  :git => 'https://github.com/jamtur01/puppet-opsgenie',
-  :ref => 'b557acea9a1dc363fdb27f60c2a747b64699645d'
-
 mod 'jfryman/nginx', '0.2.7'
 mod 'maestrodev/wget', '1.5.7'
 mod 'mthibaut/users', '1.0.11'
