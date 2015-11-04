@@ -2,6 +2,7 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 
+mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/augeas', '1.2.1'
 mod 'camptocamp/dell', '0.3.1'
 mod 'camptocamp/postfix', '1.2.10'
@@ -44,6 +45,7 @@ mod 'puppetlabs/gcc', '0.3.0'
 mod 'puppetlabs/git', '0.4.0'
 mod 'puppetlabs/inifile', '1.4.2'
 mod 'puppetlabs/java', '1.3.0'
+mod 'puppetlabs/java_ks', '1.3.1'
 mod 'puppetlabs/mysql', '3.4.0'
 mod 'puppetlabs/ntp', '4.1.0'
 mod 'puppetlabs/pe_gem', '0.1.1'
