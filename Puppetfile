@@ -89,7 +89,7 @@ mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
   :ref => '51f17af90fdee229f7361bff40eaea49cb341063'
 mod 'tykeal/sslmgmt', '1.0.0'
-mod 'zack/r10k', '3.1.1'
+mod 'zack/r10k', '3.2.0'
 
 mod 'pam',
   :git => 'https://github.com/herlo/puppet-module-pam.git'
