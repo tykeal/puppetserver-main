@@ -110,9 +110,7 @@ mod 'profile',
 mod 'role',
   :git => 'https://github.com/tykeal/puppetserver-mod-role.git'
 
-# use the local_fw from LF
-# firewall bits
 mod 'local_fw',
-  :git => 'https://gerrit.linuxfoundation.org/infra/p/puppet/modules/local_fw.git'
+  :git => 'https://github.com/tykeal/puppetserver-mod-local_fw.git'
 
 # vim: sw=2 sts=2 ts=2 et :
