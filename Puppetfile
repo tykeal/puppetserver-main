@@ -13,11 +13,7 @@ mod 'croddy/make', '0.0.5'
 mod 'external_facts',
   :git => 'https://github.com/tykeal/datacentred-external_facts.git',
   :ref => 'enable_puppet4'
-#mod 'dhoppe/screen', '1.0.3'
-# override dhoppe/screen until they support RedHat family installation
-mod 'screen',
-  :git => 'https://github.com/tykeal/puppet-screen',
-  :ref => 'a9ea1942b8c00dccae5ba2ca4cf13c67f851bb6e'
+mod 'dhoppe/screen', '1.0.5'
 mod 'engage/uwsgi', '1.2.0'
 mod 'garethr/erlang', '0.3.0'
 mod 'gentoo/portage', '2.3.0'
