@@ -90,7 +90,13 @@ mod 'tykeal/gerrit', '0.9.2'
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
   :ref => '51f17af90fdee229f7361bff40eaea49cb341063'
+#mod 'tykeal/nodepool', ''
+mod 'nodepool',
+  :git => 'https://github.com/tykeal/puppet-nodepool.git'
 mod 'tykeal/sslmgmt', '1.0.0'
+#mod 'tykeal/zuul', ''
+mod 'zuul',
+  :git => 'https://github.com/tykeal/puppet-zuul.git'
 mod 'zack/r10k', '3.2.0'
 
 mod 'pam',
