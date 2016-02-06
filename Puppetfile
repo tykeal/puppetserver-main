@@ -81,7 +81,7 @@ mod 'stahnma/epel', '1.0.2'
 mod 'rkhunter',
   :git => 'https://github.com/mmz-srf/puppet-rkhunter.git',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
-mod 'stankevich/python', '1.9.4'
+mod 'stankevich/python', '1.11.0'
 
 mod 'thias/sysctl', '1.0.0'
 mod 'tykeal/clm', '0.1.2'
