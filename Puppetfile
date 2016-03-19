@@ -29,7 +29,7 @@ mod 'ghoneycutt/vim', '2.10.0'
 mod 'herculesteam/augeasproviders_core', '2.1.2'
 mod 'kemra102/auditd', '2.0.0'
 mod 'jfryman/nginx', '0.2.7'
-mod 'maestrodev/wget', '1.5.7'
+mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
 mod 'mthibaut/users', '1.0.11'
 mod 'nanliu/staging', '1.0.3'
@@ -85,16 +85,16 @@ mod 'rkhunter',
 mod 'stankevich/python', '1.11.0'
 
 mod 'thias/sysctl', '1.0.0'
-mod 'tykeal/clm', '0.1.2'
-mod 'tykeal/gerrit', '0.9.2'
+mod 'tykeal/clm', '1.0.0'
+mod 'tykeal/gerrit', '1.0.0'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
-  :ref => '51f17af90fdee229f7361bff40eaea49cb341063'
+  :ref => '561569e89cf0b9e22a7ecd735b79ae3b07773868'
 #mod 'tykeal/nodepool', ''
 mod 'nodepool',
   :git => 'https://github.com/tykeal/puppet-nodepool.git'
-mod 'tykeal/sslmgmt', '1.0.0'
+mod 'tykeal/sslmgmt', '1.0.1'
 #mod 'tykeal/zuul', ''
 mod 'zuul',
   :git => 'https://github.com/tykeal/puppet-zuul.git'
