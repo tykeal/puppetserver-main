@@ -41,7 +41,7 @@ mod 'ghoneycutt/vim', '2.11.0'
 
 mod 'herculesteam/augeasproviders_core', '2.1.2'
 mod 'kemra102/auditd', '2.0.0'
-mod 'jfryman/nginx', '0.2.7'
+mod 'jfryman/nginx', '0.3.0'
 mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
 mod 'mthibaut/users', '1.0.11'
@@ -87,15 +87,15 @@ mod 'puppetlabs/tagmail', '2.1.1'
 mod 'puppetlabs/vcsrepo', '1.3.2'
 
 mod 'richardc/datacat', '0.6.2'
-mod 'rtyler/jenkins', '1.5.0'
+mod 'rtyler/jenkins', '1.6.1'
 
 # saz
 mod 'saz/dnsmasq', '1.2.0'
 mod 'saz-memcached', '2.8.1'
-mod 'saz/resolv_conf', '3.0.3'
+mod 'saz/resolv_conf', '3.0.5'
 mod 'saz/rsyslog', '3.5.1'
-mod 'saz/ssh', '2.4.0'
-mod 'saz/sudo', '3.0.9'
+mod 'saz/ssh', '2.8.1'
+mod 'saz/sudo', '3.1.0'
 mod 'saz/timezone', '3.3.0'
 
 #mod 'srf/rkhunter', '0.1.4'
@@ -103,10 +103,10 @@ mod 'saz/timezone', '3.3.0'
 mod 'rkhunter',
   :git => 'https://github.com/mmz-srf/puppet-rkhunter.git',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
-mod 'stahnma/epel', '1.0.2'
+mod 'stahnma/epel', '1.2.2'
 mod 'stankevich/python', '1.11.0'
 
-mod 'thias/sysctl', '1.0.0'
+mod 'thias/sysctl', '1.0.6'
 
 # tykeal
 mod 'tykeal/clm', '1.0.0'
