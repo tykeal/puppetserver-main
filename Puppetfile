@@ -15,21 +15,29 @@ mod 'croddy/make', '0.0.5'
 mod 'external_facts',
   :git => 'https://github.com/tykeal/datacentred-external_facts.git',
   :ref => 'enable_puppet4'
-mod 'dhoppe/screen', '1.0.5'
+mod 'dhoppe/screen', '1.1.1'
 mod 'engage/uwsgi', '1.2.0'
 mod 'garethr/erlang', '0.3.0'
 mod 'gentoo/portage', '2.3.0'
 
 # ghoneycutt
-mod 'ghoneycutt/common', '1.3.0'
+mod 'ghoneycutt/common', '1.5.0'
 #mod 'ghoneycutt/nfs', :latest
+# NOTE: last check (v1.11.2) still did not support EL7
 # override forge module as it is broken for EL7
 mod 'nfs',
   :git => 'https://github.com/ghoneycutt/puppet-module-nfs.git',
   :branch => 'el7'
+mod 'ghoneycutt/nsswitch', '1.4.0'
+# fork of ghoneycutt/pam (was originally forked by herlo but since he isn't here
+# anymore tykeal pulled a fork so we could pin to an LF employee till we can get
+# changes pushed into upstream
+mod 'pam',
+  :git => 'https://github.com/tykeal/puppet-module-pam.git',
+  :ref => 'f604cd2a9c7e884acbc261c226420d862affe8cc'
 mod 'ghoneycutt/rpcbind', '1.4.0'
 mod 'ghoneycutt/types', '1.9.0'
-mod 'ghoneycutt/vim', '2.10.0'
+mod 'ghoneycutt/vim', '2.11.0'
 
 mod 'herculesteam/augeasproviders_core', '2.1.2'
 mod 'kemra102/auditd', '2.0.0'
@@ -116,14 +124,12 @@ mod 'zuul',
   :git => 'https://github.com/tykeal/puppet-zuul.git'
 mod 'zack/r10k', '3.2.0'
 
-mod 'pam',
-  :git => 'https://github.com/herlo/puppet-module-pam.git'
-
-mod 'nsswitch',
-  :git => 'https://github.com/herlo/puppet-module-nsswitch.git'
-
+# fork of herlo/totpcgi that has never hit the forge. Since herlo isn't here
+# anymore tykeal pulled a fork so we could pin to an LF employee till we can
+# re-evaluate / get released to the forge
 mod 'totpcgi',
-  :git => 'https://github.com/herlo/puppet-totpcgi.git'
+  :git => 'https://github.com/tykeal/puppet-totpcgi.git',
+  :ref => '8bcff1bb7d9c71cac783da9e03fb0d44dc7754ef'
 
 
 # custom modules
