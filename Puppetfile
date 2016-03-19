@@ -11,11 +11,13 @@ mod 'camptocamp/puppetserver', '2.1.0'
 mod 'camptocamp/selinux', '0.3.1'
 
 mod 'croddy/make', '0.0.5'
+mod 'darin/zypprop', '1.0.2'
 #mod 'datacentred/external_facts', '1.0.0'
 mod 'external_facts',
   :git => 'https://github.com/tykeal/datacentred-external_facts.git',
   :ref => 'enable_puppet4'
 mod 'dhoppe/screen', '1.1.1'
+mod 'dprince/qpid', '1.0.3'
 mod 'engage/uwsgi', '1.2.0'
 mod 'garethr/erlang', '0.3.0'
 mod 'gentoo/portage', '2.3.0'
