@@ -64,6 +64,13 @@ mod 'pdxcat/nrpe', '2.0.0'
 
 # Puppet community
 mod 'puppet/jira', '1.3.0'
+#mod 'puppet/jenkins_job_builder', '1.1.1'
+# override puppet/jenkins_job_builder to acquire EL7 fix
+# This is not the origin repo for the actual fix but a clone to protect
+# against the PR being deleted
+mod 'jenkins_job_builder',
+  :git => 'https://github.com/tykeal/puppet-jenkins_job_builder.git',
+  :ref => 'a8cfd5888516319a7ff82049050d61812b80a637'
 mod 'puppet/mcollective', '2.1.1'
 
 # Puppetlabs
