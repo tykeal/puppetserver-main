@@ -43,6 +43,7 @@ mod 'ghoneycutt/vim', '2.11.0'
 
 mod 'herculesteam/augeasproviders_core', '2.1.2'
 mod 'kemra102/auditd', '2.0.0'
+mod 'kemra102/ius', '1.1.0'
 mod 'jfryman/nginx', '0.3.0'
 mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
