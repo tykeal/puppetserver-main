@@ -123,6 +123,9 @@ mod 'thias/sysctl', '1.0.6'
 # tykeal
 mod 'tykeal/clm', '1.0.0'
 mod 'tykeal/gerrit', '1.0.0'
+#mod 'tykeal/jjb', '1.0.0'
+mod 'jjb',
+  :git => 'https://github.com/tykeal/puppet-jjb.git'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
