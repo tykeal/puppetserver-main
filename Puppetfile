@@ -47,7 +47,10 @@ mod 'kemra102/ius', '1.1.0'
 mod 'jfryman/nginx', '0.3.0'
 mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
-mod 'mthibaut/users', '1.0.11'
+# point to a git version so we can do some debugging to create some patches
+#mod 'mthibaut/users', '1.0.11'
+mod 'users',
+  :git => 'https://github.com/tykeal/puppet-users'
 mod 'nanliu/staging', '1.0.3'
 
 # Openstack
