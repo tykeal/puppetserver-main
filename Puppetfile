@@ -50,7 +50,8 @@ mod 'mkrakowitzer/deploy', '0.0.3'
 # point to a git version so we can do some debugging to create some patches
 #mod 'mthibaut/users', '1.0.11'
 mod 'users',
-  :git => 'https://github.com/tykeal/puppet-users'
+  :git => 'https://github.com/tykeal/puppet-users',
+  :ref => '47559be0582fe95951507ae4ce1c17b4eb9de907'
 mod 'nanliu/staging', '1.0.3'
 
 # Openstack
