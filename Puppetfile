@@ -124,6 +124,7 @@ mod 'tykeal/ini_config', '1.0.0'
 #mod 'tykeal/jjb', '1.0.0'
 mod 'jjb',
   :git => 'https://github.com/tykeal/puppet-jjb.git'
+mod 'hubspot/nexus', '1.3.3'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
