@@ -97,7 +97,7 @@ mod 'puppetlabs/vcsrepo', '1.3.2'
 mod 'puppetlabs/xinetd', '2.0.0'
 
 mod 'richardc/datacat', '0.6.2'
-mod 'rtyler/jenkins', '1.5.0'
+mod 'rtyler/jenkins', '1.6.1'
 
 # saz
 mod 'saz/dnsmasq', '1.2.0'
