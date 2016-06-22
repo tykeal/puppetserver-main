@@ -44,6 +44,7 @@ mod 'ghoneycutt/vim', '2.11.0'
 mod 'herculesteam/augeasproviders_core', '2.1.2'
 mod 'kemra102/auditd', '2.0.0'
 mod 'kemra102/ius', '1.1.0'
+mod 'hubspot/nexus', '1.3.3'
 mod 'jfryman/nginx', '0.3.0'
 mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
@@ -120,11 +121,9 @@ mod 'thias/sysctl', '1.0.6'
 # tykeal
 mod 'tykeal/clm', '1.0.0'
 mod 'tykeal/gerrit', '1.0.0'
-mod 'tykeal/ini_config', '1.0.0'
-#mod 'tykeal/jjb', '1.0.0'
-mod 'jjb',
-  :git => 'https://github.com/tykeal/puppet-jjb.git'
-mod 'hubspot/nexus', '1.3.3'
+mod 'tykeal/ini_config', '1.1.0'
+mod 'tykeal/jjb', '1.0.2'
+
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
