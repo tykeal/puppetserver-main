@@ -16,6 +16,7 @@ mod 'darin/zypprepo', '1.0.2'
 mod 'external_facts',
   :git => 'https://github.com/tykeal/datacentred-external_facts.git',
   :ref => 'enable_puppet4'
+mod 'datacentred/ldap', '1.1.0'
 mod 'dhoppe/screen', '1.1.1'
 mod 'dprince/qpid', '1.0.3'
 mod 'engage/uwsgi', '1.2.0'
