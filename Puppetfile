@@ -43,6 +43,7 @@ mod 'ghoneycutt/types', '1.9.0'
 mod 'ghoneycutt/vim', '2.11.0'
 
 mod 'herculesteam/augeasproviders_core', '2.1.2'
+mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 mod 'kemra102/auditd', '2.0.0'
 mod 'kemra102/ius', '1.1.0'
 mod 'hubspot/nexus', '1.3.3'
