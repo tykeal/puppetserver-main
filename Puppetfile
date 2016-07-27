@@ -5,7 +5,7 @@ forge 'http://forge.puppetlabs.com'
 # Camptocamp
 mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/augeas', '1.4.2'
-mod 'camptocamp/dell', '0.4.0'
+mod 'camptocamp/dell', '0.4.1'
 mod 'camptocamp/openldap', '1.14.0'
 mod 'camptocamp/postfix', '1.2.10'
 mod 'camptocamp/puppetserver', '2.1.0'
