@@ -122,7 +122,7 @@ mod 'thias/sysctl', '1.0.6'
 
 # tykeal
 mod 'tykeal/clm', '1.0.0'
-mod 'tykeal/gerrit', '1.0.0'
+mod 'tykeal/gerrit', '1.1.1'
 mod 'tykeal/ini_config', '1.1.0'
 mod 'tykeal/jjb', '1.0.2'
 
