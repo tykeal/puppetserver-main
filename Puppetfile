@@ -143,8 +143,8 @@ mod 'zack/r10k', '3.2.0'
 # anymore tykeal pulled a fork so we could pin to an LF employee till we can
 # re-evaluate / get released to the forge
 mod 'totpcgi',
-  :git => 'https://github.com/tykeal/puppet-totpcgi.git',
-  :ref => '8bcff1bb7d9c71cac783da9e03fb0d44dc7754ef'
+  :git => 'https://github.com/mricon/puppet-totpcgi.git',
+  :ref => '4c764a6f96e0d3d5d73e5861e214d2fb6d22db45'
 
 
 # custom modules
