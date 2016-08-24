@@ -129,7 +129,7 @@ mod 'tykeal/jjb', '1.0.2'
 #mod 'tykeal/nagios', ''
 mod 'nagios',
   :git => 'https://github.com/tykeal/puppet-nagios.git',
-  :ref => '561569e89cf0b9e22a7ecd735b79ae3b07773868'
+  :ref => '481a239650da9ac06aa1f1bd0c2d577c5d800bd3'
 #mod 'tykeal/nodepool', ''
 mod 'nodepool',
   :git => 'https://github.com/tykeal/puppet-nodepool.git'
