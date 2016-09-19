@@ -44,6 +44,8 @@ mod 'ghoneycutt/vim', '2.11.0'
 mod 'herculesteam/augeasproviders_core', '2.1.3'
 mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 
+mod 'jlcox/gitolite', '1.2.3'
+
 # kemra102
 mod 'kemra102/auditd', '2.0.1'
 mod 'kemra102/ius', '1.1.0'
