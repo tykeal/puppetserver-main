@@ -3,7 +3,6 @@ forge 'http://forge.puppetlabs.com'
 # Modules from the Puppet Forge
 
 # Camptocamp
-mod 'camptocamp/archive', '0.8.1'
 mod 'camptocamp/augeas', '1.5.1'
 mod 'camptocamp/dell', '0.5.1'
 mod 'camptocamp/openldap', '1.15.0'
@@ -73,6 +72,7 @@ mod 'openstack/vswitch', '3.0.0'
 mod 'pdxcat/nrpe', '2.1.1'
 
 # Puppet community
+mod 'puppet/archive',  '1.1.2'
 mod 'puppet/jira', '2.1.0'
 mod 'puppet/mcollective', '2.3.0'
 mod 'puppet/nginx', '0.4.0'
