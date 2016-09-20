@@ -103,7 +103,7 @@ mod 'puppetlabs/xinetd', '2.0.0'
 
 mod 'richardc/datacat', '0.6.2'
 mod 'rmueller/cron', '0.1.3'
-mod 'rtyler/jenkins', '1.6.1'
+mod 'rtyler/jenkins', '1.7.0'
 
 # saz
 mod 'saz/dnsmasq', '1.2.0'
