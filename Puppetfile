@@ -52,7 +52,7 @@ mod 'inkblot/shorewall', '4.5.2'
 #mod 'jlcox/gitolite', '1.2.3'
 mod 'gitolite',
   :git => 'https://github.com/tykeal/puppet-gitolite.git',
-  :ref => '8b45f8b123f6484f5d3123b409e8cfd389e1ad84'
+  :branch => 'alternate_repository_root'
 
 # kemra102
 mod 'kemra102/auditd', '2.0.1'
