@@ -45,6 +45,10 @@ mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 
 mod 'hubspot/nexus', '1.3.3'
 
+# inkblot
+mod 'inkblot/bind', '6.0.1'
+mod 'inkblot/shorewall', '4.5.2'
+
 mod 'jlcox/gitolite', '1.2.3'
 
 # kemra102
