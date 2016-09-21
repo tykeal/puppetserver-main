@@ -49,7 +49,9 @@ mod 'hubspot/nexus', '1.3.3'
 mod 'inkblot/bind', '6.0.1'
 mod 'inkblot/shorewall', '4.5.2'
 
-mod 'jlcox/gitolite', '1.2.3'
+#mod 'jlcox/gitolite', '1.2.3'
+mod 'gitolite',
+  :git => 'https://github.com/tykeal/puppet-gitolite.git'
 
 # kemra102
 mod 'kemra102/auditd', '2.0.1'
