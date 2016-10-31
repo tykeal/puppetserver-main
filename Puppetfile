@@ -111,6 +111,7 @@ mod 'puppetlabs/tomcat', '1.5.0'
 mod 'puppetlabs/vcsrepo', '1.4.0'
 mod 'puppetlabs/xinetd', '2.0.0'
 
+mod 'razorsedge/network', '3.8.0'
 mod 'richardc/datacat', '0.6.2'
 mod 'rmueller/cron', '0.1.3'
 mod 'rtyler/jenkins', '1.7.0'
