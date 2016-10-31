@@ -133,6 +133,8 @@ mod 'rkhunter',
 mod 'stahnma/epel', '1.2.2'
 mod 'stankevich/python', '1.11.0'
 
+# thias
+mod 'thias/libvirt', '1.0.0'
 mod 'thias/sysctl', '1.0.6'
 
 # tykeal
