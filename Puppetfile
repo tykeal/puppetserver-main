@@ -22,6 +22,7 @@ mod 'gentoo/portage', '2.3.0'
 
 # ghoneycutt
 mod 'ghoneycutt/common', '1.6.0'
+mod 'ghoneycutt/hosts', '2.4.0'
 #mod 'ghoneycutt/nfs', :latest
 # NOTE: last check (v1.11.2) still did not support EL7
 # override forge module as it is broken for EL7
