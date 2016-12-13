@@ -6,6 +6,7 @@ forge 'http://forge.puppetlabs.com'
 mod 'camptocamp/augeas', '1.5.1'
 mod 'camptocamp/dell', '0.5.1'
 mod 'camptocamp/openldap', '1.15.0'
+mod 'camptocamp/openssl', '1.8.2'
 mod 'camptocamp/postfix', '1.4.0'
 mod 'camptocamp/puppetserver', '2.1.0'
 mod 'camptocamp/selinux', '0.3.1'
@@ -49,6 +50,8 @@ mod 'hubspot/nexus', '1.6.1'
 # inkblot
 mod 'inkblot/bind', '6.0.1'
 mod 'inkblot/shorewall', '4.5.2'
+
+mod 'jhoblitt/nsstools', '2.0.0'
 
 #mod 'jlcox/gitolite', '1.2.3'
 mod 'gitolite',
