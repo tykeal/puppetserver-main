@@ -147,11 +147,7 @@ mod 'tykeal/clm', '1.0.0'
 mod 'tykeal/gerrit', '1.1.1'
 mod 'tykeal/ini_config', '1.1.0'
 mod 'tykeal/jjb', '1.0.2'
-
-#mod 'tykeal/nagios', ''
-mod 'nagios',
-  :git => 'https://github.com/tykeal/puppet-nagios.git',
-  :ref => 'ad1806f03f1b16260538e30850743c861d1c59ea'
+mod 'tykeal/nagios', '1.0.0'
 #mod 'tykeal/nodepool', ''
 mod 'nodepool',
   :git => 'https://github.com/tykeal/puppet-nodepool.git'
