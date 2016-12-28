@@ -136,7 +136,7 @@ mod 'rkhunter',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
 
 mod 'stahnma/epel', '1.2.2'
-mod 'stankevich/python', '1.11.0'
+mod 'stankevich/python', '1.18.2'
 
 # thias
 mod 'thias/libvirt', '1.0.0'
