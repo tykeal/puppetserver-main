@@ -89,7 +89,7 @@ mod 'puppet/confluence', '2.2.2'
 mod 'puppet/jira', '2.1.0'
 mod 'puppet/mcollective', '2.3.0'
 mod 'puppet/mysql_java_connector', '2.2.0'
-mod 'puppet/nginx', '0.4.0'
+mod 'puppet/nginx', '0.5.0'
 mod 'puppet/staging', '2.0.1'
 
 # Puppetlabs
