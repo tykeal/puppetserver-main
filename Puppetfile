@@ -45,7 +45,11 @@ mod 'ghoneycutt/vim', '2.11.0'
 mod 'herculesteam/augeasproviders_core', '2.1.3'
 mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 
-mod 'hubspot/nexus', '1.7.1'
+#mod 'hubspot/nexus', '1.7.1'
+# temporary work around for config file problems
+mod 'nexus',
+  :git => 'https://github.com/tykeal/puppet-nexus.git',
+  :ref => 'c8e4bf795ede579516b4c4ea418b8942cbce3917'
 
 # inkblot
 mod 'inkblot/bind', '6.0.1'
