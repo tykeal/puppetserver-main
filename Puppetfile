@@ -49,7 +49,7 @@ mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 # temporary work around for config file problems
 mod 'nexus',
   :git => 'https://github.com/tykeal/puppet-nexus.git',
-  :ref => '2493403dcae0724ffa5ef86b94b7f386f9fc3eff'
+  :ref => '7c345d19ce7278707888d837b53e28a5629c686d'
 
 # inkblot
 mod 'inkblot/bind', '6.0.1'
