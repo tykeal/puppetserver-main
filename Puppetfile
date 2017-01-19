@@ -45,7 +45,7 @@ mod 'ghoneycutt/vim', '2.11.0'
 mod 'herculesteam/augeasproviders_core', '2.1.3'
 mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 
-mod 'hubspot/nexus', '1.6.1'
+mod 'hubspot/nexus', '1.7.1'
 
 # inkblot
 mod 'inkblot/bind', '6.0.1'
