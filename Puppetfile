@@ -46,10 +46,11 @@ mod 'herculesteam/augeasproviders_core', '2.1.3'
 mod 'herculesteam/augeasproviders_shellvar', '2.2.1'
 
 #mod 'hubspot/nexus', '1.7.1'
-# temporary work around for config file problems
+# upgrade to latest version (1.7.1) + patch that correctly supports nexus 3
+# since an update with it hasn't been released yet. Targeted for 1.7.2
 mod 'nexus',
-  :git => 'https://github.com/tykeal/puppet-nexus.git',
-  :ref => '27be21dc4721a96d8c92601d548bd10a188c58f8'
+  :git => 'https://github.com/hubspotdevops/puppet-nexus',
+  :ref => '7dffd1378f11da7c96122f8175980f7536a3c87f'
 
 # inkblot
 mod 'inkblot/bind', '6.0.1'
