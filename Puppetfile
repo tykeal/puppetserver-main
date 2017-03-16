@@ -2,6 +2,16 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 
+# letsencrypt/dehydrated
+#mod 'bzed/letsencrypt', '0.1.16'
+# JC - 2017/03/16
+# using github fork until https://github.com/bzed/bzed-letsencrypt/pull/27 is
+# merged which should allow setting the certs base_dir to something other than
+# /etc/letsencrypt which will fix SELinux headaches.
+mod 'letsencrypt',
+  :git => 'https://github.com/siliconalchemy/bzed-letsencrypt.git',
+  :ref => 'b29b64ce35390baa10a56c2c2a1c30a68e1e42c6'
+
 # Camptocamp
 mod 'camptocamp/augeas', '1.5.1'
 mod 'camptocamp/dell', '0.5.1'
@@ -54,14 +64,15 @@ mod 'nexus',
 
 # inkblot
 mod 'inkblot/bind', '6.0.1'
-mod 'inkblot/shorewall', '4.5.2'
+mod 'inkblot/shorewall', '5.0.1'
 
 mod 'jhoblitt/nsstools', '2.0.0'
 
 #mod 'jlcox/gitolite', '1.2.3'
+# PR#5 has been made to incorporate this work
 mod 'gitolite',
   :git => 'https://github.com/tykeal/puppet-gitolite.git',
-  :branch => 'alternate_repository_root'
+  :ref => 'd88d406f07313cc7de2624a604d056ca2172a12a'
 
 # kemra102
 mod 'kemra102/auditd', '2.0.1'
@@ -72,7 +83,7 @@ mod 'mkrakowitzer/deploy', '0.0.3'
 # point to a git version so we can do some debugging to create some patches
 #mod 'mthibaut/users', '1.0.11'
 mod 'users',
-  :git => 'https://github.com/tykeal/puppet-users',
+  :git => 'https://github.com/tykeal/puppet-users.git',
   :ref => '47559be0582fe95951507ae4ce1c17b4eb9de907'
 
 # Openstack
@@ -91,7 +102,7 @@ mod 'pdxcat/nrpe', '2.1.1'
 # Puppet community
 mod 'puppet/archive',  '1.1.2'
 mod 'puppet/confluence', '2.2.2'
-mod 'puppet/jira', '2.1.0'
+mod 'puppet/jira', '3.0.1'
 mod 'puppet/mcollective', '2.3.0'
 mod 'puppet/mysql_java_connector', '2.2.0'
 mod 'puppet/nginx', '0.5.0'
@@ -125,9 +136,12 @@ mod 'richardc/datacat', '0.6.2'
 mod 'rmueller/cron', '0.1.3'
 mod 'rtyler/jenkins', '1.7.0'
 
+# stm
+mod 'stm/haveged', '0.2.0'
+
 # saz
 mod 'saz/dnsmasq', '1.2.0'
-mod 'saz-memcached', '2.8.1'
+mod 'saz/memcached', '2.8.1'
 mod 'saz/resolv_conf', '3.0.5'
 mod 'saz/rsyslog', '3.5.1'
 mod 'saz/ssh', '2.9.1'
