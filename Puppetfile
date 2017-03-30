@@ -155,7 +155,11 @@ mod 'rkhunter',
   :ref => '803ebabed06c4052ec03afdc876604abb2ac136e'
 
 mod 'stahnma/epel', '1.2.2'
-mod 'stankevich/python', '1.18.2'
+# need https://github.com/stankevich/puppet-python/pull/359
+#mod 'stankevich/python', '1.18.2'
+mod 'python',
+  :git => 'https://github.com/stankevich/puppet-python.git',
+  :ref => '4af8ebbad751320330d86c42fc65cfc1e4a2168c'
 
 # thias
 mod 'thias/libvirt', '1.0.0'
