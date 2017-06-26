@@ -102,7 +102,7 @@ mod 'pdxcat/nrpe', '2.1.1'
 # Puppet community
 mod 'puppet/archive',  '1.1.2'
 mod 'puppet/confluence', '2.2.2'
-mod 'puppet/jira', '3.0.1'
+mod 'puppet/jira', '3.1.0'
 mod 'puppet/mcollective', '2.3.0'
 mod 'puppet/mysql_java_connector', '2.2.0'
 mod 'puppet/nginx', '0.5.0'
