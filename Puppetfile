@@ -166,7 +166,10 @@ mod 'thias/libvirt', '1.0.0'
 mod 'thias/sysctl', '1.0.6'
 
 # tykeal
-mod 'tykeal/clm', '1.0.0'
+#mod 'tykeal/clm', '1.0.0'
+mod 'clm',
+  :git => 'https://github.com/tykeal/puppet-clm.git',
+  :ref => '470980054c29cadd9ba5a125413dfc9f9ad8898b'
 mod 'tykeal/gerrit', '1.1.1'
 mod 'tykeal/ini_config', '1.1.0'
 mod 'tykeal/jjb', '1.0.2'
