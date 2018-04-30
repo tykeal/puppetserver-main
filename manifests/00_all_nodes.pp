@@ -4,18 +4,7 @@
 
 # PRIMARY FILEBUCKET
 # Required definition for directory environments
-$_default_filebucket = {
-  server => 'puppet',
-  path   => false,
-}
-#$hiera_filebucket = hiera('filebucket')
-$hiera_filebcuket = lookup(
-    'filebucket',
-    {
-      'value_type'    => Hash,
-      'default_value' => $_default_filebucket,
-    }
-  )
+$hiera_filebucket = hiera('filebucket')
 filebucket { 'main':
   server => $hiera_filebucket['server'],
   path   => $hiera_filebucket['path'],
