@@ -80,6 +80,7 @@ mod 'kemra102/ius', '1.1.0'
 
 mod 'maestrodev/wget', '1.7.3'
 mod 'mkrakowitzer/deploy', '0.0.3'
+mod 'mmckinst/hash2stuff', '1.2.1'
 # point to a git version so we can do some debugging to create some patches
 #mod 'mthibaut/users', '1.0.11'
 mod 'users',
